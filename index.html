@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Étoile Weddings | Luxury Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#">
+          <span class="brand-mark">É</span>
+          <span class="brand-name">Étoile Weddings</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Open menu</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <div id="nav-menu" class="nav-menu" role="navigation">
+          <a href="#services">Services</a>
+          <a href="#story">Our Story</a>
+          <a href="#venues">Venues</a>
+          <a class="nav-cta" href="#search">Book a Tour</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="hero" id="story">
+        <div class="hero-media">
+          <img src="assets/hero.svg" alt="A romantic wedding couple silhouette" loading="eager" />
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Luxury wedding booking service</p>
+          <h1>La vie en rose, curated for your once-in-a-lifetime celebration.</h1>
+          <p class="hero-subtext">
+            Discover couture venues, floral artists, and bespoke planners. We bring every romantic detail
+            into perfect harmony for your day.
+          </p>
+          <div class="hero-highlights">
+            <div>
+              <span class="highlight-title">120+</span>
+              <span class="highlight-meta">exclusive partners</span>
+            </div>
+            <div>
+              <span class="highlight-title">4.9</span>
+              <span class="highlight-meta">average rating</span>
+            </div>
+            <div>
+              <span class="highlight-title">48h</span>
+              <span class="highlight-meta">concierge response</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="search" id="search">
+        <div class="search-card">
+          <h2>Your dream celebration starts here</h2>
+          <p>Search for curated planners, venues, and couture artisans.</p>
+          <form class="search-form">
+            <label>
+              <span>Location</span>
+              <input type="text" placeholder="Paris, Provence, or Riviera" />
+            </label>
+            <label>
+              <span>Date</span>
+              <input type="date" />
+            </label>
+            <label>
+              <span>Guest Count</span>
+              <input type="number" min="20" max="500" placeholder="120" />
+            </label>
+            <button type="submit">Find my matches</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="carousel" id="services">
+        <div class="carousel-header">
+          <div>
+            <p class="eyebrow">Sponsored partners</p>
+            <h2>Featured wedding artisans</h2>
+          </div>
+          <div class="carousel-actions">
+            <span>Scroll to explore</span>
+          </div>
+        </div>
+        <div class="carousel-track" role="list">
+          <article class="carousel-card" role="listitem">
+            <img src="assets/card-floral.svg" alt="Floral design with roses and candlelight" loading="lazy" />
+            <div class="card-body">
+              <h3>Maison Fleurie</h3>
+              <p>Floral artistry with heirloom roses and gilded accents.</p>
+              <span class="card-tag">Floral Atelier</span>
+            </div>
+          </article>
+          <article class="carousel-card" role="listitem">
+            <img src="assets/card-planner.svg" alt="Luxury wedding planner preparing a tablescape" loading="lazy" />
+            <div class="card-body">
+              <h3>Amélie Planning</h3>
+              <p>Full-service planning with couture-inspired timelines.</p>
+              <span class="card-tag">Wedding Planner</span>
+            </div>
+          </article>
+          <article class="carousel-card" role="listitem">
+            <img src="assets/card-venue.svg" alt="Elegant venue with chandeliers and a long dining table" loading="lazy" />
+            <div class="card-body">
+              <h3>Château Lumière</h3>
+              <p>Historic estate with candlelit halls and garden terraces.</p>
+              <span class="card-tag">Venue</span>
+            </div>
+          </article>
+          <article class="carousel-card" role="listitem">
+            <img src="assets/card-couture.svg" alt="Bridal gown detailing on a mannequin" loading="lazy" />
+            <div class="card-body">
+              <h3>Atelier Élise</h3>
+              <p>Hand-sewn gowns with vintage lace and satin.</p>
+              <span class="card-tag">Bridal Couture</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
